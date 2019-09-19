@@ -1,0 +1,316 @@
+
+/* LINKING FONTS LOCALLY */
+
+/* vietnamese */
+@font-face {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Lexend Deca Regular'), local('LexendDeca-Regular'), url(../fonts/K2F1fZFYk-dHSE0UPPuwQ5qoJy_KZA.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Lexend Deca Regular'), local('LexendDeca-Regular'), url(../fonts/K2F1fZFYk-dHSE0UPPuwQ5qpJy_KZA.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Lexend Deca Regular'), local('LexendDeca-Regular'), url(../fonts/K2F1fZFYk-dHSE0UPPuwQ5qnJy8.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+/* REMOVING SOME DEFAULT PROPERTIES */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    font-weight: 200;
+ 
+}
+
+body{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins';
+    background-image: url("../img/3840x2160\ Earth\ From\ Space.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+/* HEADER   STARTS  HERE*/
+
+
+header{
+    width:100vw;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    /* background-color:red; */
+    height:65px;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 10px 17px 0px rgba(0,0,0,0.26);
+    animation: slidedown 2s ease-in-out 1;
+    /* animation-delay: 1s; */
+    animation-fill-mode: forwards;
+
+
+}
+
+.logo{
+    display: block;
+    position: relative;
+    top:20px;
+    width: 5%;
+}
+
+header ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+header ul li{
+    text-decoration: none;
+    list-style: none;
+    margin: -10px 20px 0px 10px;
+    font-size: 20px;
+    color:white;
+    /* text-shadow: 1px 4px 2px rgba(0,0,0,0.45); */
+    text-shadow: 1px 4px 4px #7A797A;
+    cursor:pointer;
+}
+
+header ul li:hover{
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+/* HEADER ENDS HERE */
+
+
+/* MAIN STARTS HERE */
+
+.center-part{
+
+    height:95vh;
+    /* display: flex; */
+    /* justify-content: center; */ 
+}
+
+.center-button{
+    height:200px;
+    width:200px;
+    margin: auto;
+    margin-top: 160px;
+    border-radius: 100%;
+    border: 5px solid white;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,1);
+    animation: zoom 2.5s ease-in-out infinite;
+    cursor: pointer;
+    /* animation-fill-mode: forwards; */
+}
+
+.center-button:hover{
+   
+    transition: 1s ease-in-out;
+}
+
+.center-button i{
+    color:white;
+    font-size: 100px;
+    position: relative;
+    left:36%;
+    top:22%;
+    animation: fade 2s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+.center-head{
+        color: white;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 50px;
+        animation: fade 2s ease-in-out 1;
+}
+
+    .content{
+        height: 110vh;
+        /* backdrop-filter: blur(50px); */
+        transform: translate3d(0,0,0);
+        /* background-color: #2C3A47;  */
+        background-image: url('../img/3840x2400\ Earth\ Sunset.jpg');
+        color: white;
+        /* background-size: 100%; */
+        /* background-repeat: no-repeat; */
+        background-attachment: fixed;
+        text-align: center;
+        /* background-color: white; */
+    }
+
+    .content h1{
+      /* margin-top: 50px; */
+      font-size: 50px;
+    }
+    .content p{
+      margin-top: 50px;f
+      font-size: 20px;
+      margin-bottom: 5%;
+    }
+
+    .card-contaner{
+        display: flex;
+        justify-content: space-around;
+        width: 98vw;
+    }
+    .card{
+      height:  400px;
+      width: 300px;
+      padding: 5px;
+       /* display: flex; */
+      /* justify-content: center; */
+      border-radius: 50px;
+      
+      background-color: #2c3e50;
+     
+      transform: translate3d(0,0,0);
+      box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.5);
+    }
+    .card-img{
+      height: 200px;
+      width: 200px;
+      margin: auto;
+    }
+
+    .card-img img{
+      height: 100%;
+     
+      width: 100%;
+      border-radius: 200%;
+      background-size: cover;
+    }
+
+    .card-data{
+      color: white;
+    }
+
+    .card-data h2{
+      font-size: 30px;
+    }
+    .card-data p{
+      font-size: 16px;
+    }
+
+/* MAIN ENDS HERE */
+
+
+
+
+/* ANIMATION KEYFRAMES */
+@keyframes fade{
+    0%{
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slidedown{
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes zoom{
+  0%{
+    transform: scale(1);
+   
+  }
+  50%{
+    transform: scale(1.05);
+   
+
+  }
+  100%{
+    transform: scale(1);
+   
+    
+  }
+}
+
+@keyframes appear{
+    0%{
+        backdrop-filter: blur(5px);
+    }
+    100%{
+        backdrop-filter: blur(0px);
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+/* ANIMATION KEYFRAMES ENDS HERE */
+
+/* SCROLLBAR ENHANCEMENTS */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+/* SCROLLBAR ENDS HERE */
